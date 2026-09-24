@@ -19,8 +19,8 @@ The objective is to implement uninformed and informed search algorithms and appl
 ## Current Progress
 
 - [x] Q1 – Depth First Search (DFS)
-- [ ] Q2 – Breadth First Search (BFS)
-- [ ] Q3 – Uniform Cost Search (UCS)
+- [x] Q2 – Breadth First Search (BFS)
+- [x] Q3 – Uniform Cost Search (UCS)
 - [ ] Q4 – A* Search
 - [ ] Q5 – Corners Problem
 - [ ] Q6 – Corners Heuristic
