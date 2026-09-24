@@ -124,9 +124,46 @@ def depthFirstSearch(problem: SearchProblem):
     return []
 
 def breadthFirstSearch(problem: SearchProblem):
-    """Search the shallowest nodes in the search tree first."""
-    "*** YOUR CODE HERE ***"
-    util.raiseNotDefined()
+
+    # BFS uses a Queue (FIFO: First In, First Out).
+    queue = util.Queue()
+
+    # Get the starting state.
+    start = problem.getStartState()
+
+    # Store (state, path).
+    queue.push((start, []))
+
+    # Keep track of explored states.
+    visited = set()
+
+    # Continue while there are states waiting.
+    while not queue.isEmpty():
+
+        # Take the FIRST-added state from the queue.
+        state, path = queue.pop()
+
+        # If this is the goal, return the path.
+        if problem.isGoalState(state):
+            return path
+
+        # Only explore states we haven't explored before.
+        if state not in visited:
+
+            # Mark current state as explored.
+            visited.add(state)
+
+            # Find possible next states.
+            for successor, action, stepCost in problem.getSuccessors(state):
+
+                # Create the path to that successor.
+                newPath = path + [action]
+
+                # Add successor to the queue.
+                queue.push((successor, newPath))
+
+    # No solution found.
+    return []
 
 def uniformCostSearch(problem: SearchProblem):
     """Search the node of least total cost first."""
