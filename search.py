@@ -166,9 +166,50 @@ def breadthFirstSearch(problem: SearchProblem):
     return []
 
 def uniformCostSearch(problem: SearchProblem):
-    """Search the node of least total cost first."""
-    "*** YOUR CODE HERE ***"
-    util.raiseNotDefined()
+
+    # UCS uses a Priority Queue.
+    priorityQueue = util.PriorityQueue()
+
+    # Get Pac-Man's starting state.
+    start = problem.getStartState()
+
+    # Start with an empty path and cost 0.
+    priorityQueue.push((start, [], 0), 0)
+
+    # Keep track of explored states.
+    visited = set()
+
+    while not priorityQueue.isEmpty():
+
+        # Take the node with the LOWEST total cost.
+        state, path, cost = priorityQueue.pop()
+
+        # Check whether this state is the goal.
+        if problem.isGoalState(state):
+            return path
+
+        # Only explore states that have not been explored.
+        if state not in visited:
+
+            # Mark current state as explored.
+            visited.add(state)
+
+            # Look at all possible next states.
+            for successor, action, stepCost in problem.getSuccessors(state):
+
+                # Add the new action to the existing path.
+                newPath = path + [action]
+
+                # Total cost = previous cost + next step cost.
+                newCost = cost + stepCost
+
+                # Add successor with total cost as its priority.
+                priorityQueue.push(
+                    (successor, newPath, newCost),
+                    newCost
+                )
+
+    return []
 
 def nullHeuristic(state, problem=None):
     """
