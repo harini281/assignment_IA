@@ -229,3 +229,5 @@ bfs = breadthFirstSearch
 dfs = depthFirstSearch
 astar = aStarSearch
 ucs = uniformCostSearch
+
+# Module overview: Defines the generic search problem interface and classic graph search algorithms.
