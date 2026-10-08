@@ -50,3 +50,5 @@ class GreedyAgent(Agent):
 
 def scoreEvaluation(state):
     return state.getScore()
+
+# Module overview: Defines Pac-Man agents that select actions from the current game state.
