@@ -252,6 +252,8 @@ class GraphSearchTest(testClasses.TestCase):
         handle.close()
         return True
 
+# Module overview: Provides search-specific test cases and solution validation helpers.
+
 
 
 class PacmanSearchTest(testClasses.TestCase):
@@ -820,4 +822,3 @@ class CornerHeuristicPacman(testClasses.TestCase):
         handle.write('thresholds: "2000 1600 1200"\n')
         handle.close()
         return True
-
