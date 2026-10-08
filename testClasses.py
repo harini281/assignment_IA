@@ -208,3 +208,4 @@ class TestCase(object):
     def addMessage(self, message):
         self.messages.extend(message.split('\n'))
 
+# Module overview: Defines reusable test case classes and grading result containers.
