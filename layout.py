@@ -148,3 +148,5 @@ def tryToLoad(fullname):
     f = open(fullname)
     try: return Layout([line.strip() for line in f])
     finally: f.close()
+
+# Module overview: Loads maze layouts and exposes the board geometry used by the game.
