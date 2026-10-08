@@ -45,6 +45,8 @@ class NullGraphics:
     def finish(self):
         pass
 
+# Module overview: Presents Pac-Man game progress and state information in the terminal.
+
 class PacmanGraphics:
     def __init__(self, speed=None):
         if speed != None:
