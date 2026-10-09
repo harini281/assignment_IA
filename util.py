@@ -670,3 +670,4 @@ def unmutePrint():
     sys.stdout = _ORIGINAL_STDOUT
     #sys.stderr = _ORIGINAL_STDERR
 
+# Module overview: Supplies shared data structures, priority queues, and runtime utility helpers.

@@ -323,3 +323,5 @@ class Counter(dict):
     Returns the sum of counts for all keys.
     """
     return sum(self.values())
+
+# Module overview: Supplies grading utilities for running tests and recording assessment results.

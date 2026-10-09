@@ -42,6 +42,8 @@ class RandomGhost( GhostAgent ):
         dist.normalize()
         return dist
 
+# Module overview: Implements ghost agent behavior, movement choices, and action distributions.
+
 class DirectionalGhost( GhostAgent ):
     "A ghost that prefers to rush Pacman, or flee when scared."
     def __init__( self, index, prob_attack=0.8, prob_scaredFlee=0.8 ):

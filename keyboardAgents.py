@@ -56,6 +56,8 @@ class KeyboardAgent(Agent):
         self.lastMove = move
         return move
 
+# Module overview: Connects keyboard input with human-controlled Pac-Man agent actions.
+
     def getMove(self, legal):
         move = Directions.STOP
         if   (self.WEST_KEY in self.keys or 'Left' in self.keys) and Directions.WEST in legal:  move = Directions.WEST

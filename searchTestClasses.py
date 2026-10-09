@@ -252,6 +252,8 @@ class GraphSearchTest(testClasses.TestCase):
         handle.close()
         return True
 
+# Module overview: Provides search-specific test cases and solution validation helpers.
+
 
 
 class PacmanSearchTest(testClasses.TestCase):

@@ -279,3 +279,5 @@ if __name__ == '__main__':
 
         input("Press return for the next state...")   # wait for key stroke
         i += 1
+
+# Module overview: Defines the eight-puzzle state representation and successor logic.

@@ -727,3 +727,5 @@ class Game:
                     self.unmute()
                     return
         self.display.finish()
+
+# Module overview: Provides the game state, agent turn, and Pac-Man game loop framework.

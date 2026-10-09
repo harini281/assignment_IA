@@ -400,3 +400,5 @@ if __name__ == '__main__':
     move_to(g, (50, 50))
     circle((150, 150), 20, formatColor(0.7, 0.3, 0.0), endpoints=[15, - 15])
     sleep(2)
+
+# Module overview: Contains low-level drawing, color, timing, and window utility functions.
