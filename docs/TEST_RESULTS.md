@@ -34,3 +34,14 @@ Average Score: 442.0
 Scores:        442.0
 Win Rate:      1/1 (1.00)
 Record:        Win
+
+## A* Search (A-Star)
+[SearchAgent] using function astar and heuristic manhattanHeuristic
+[SearchAgent] using problem type PositionSearchProblem
+Path found with total cost of 210 in 0.0 seconds
+Search nodes expanded: 549
+Pacman emerges victorious! Score: 300
+Average Score: 300.0
+Scores:        300.0
+Win Rate:      1/1 (1.00)
+Record:        Win
