@@ -31,3 +31,32 @@ Note: `conda` was not available on this machine, so a Python `venv` was used ins
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
 pip install numpy matplotlib
+```
+
+---
+
+## 3. Running the Game
+
+```powershell
+python pacman.py
+```
+
+Confirmed the game engine loads and runs. The default agent plays randomly and usually loses — this is expected and not an error.
+
+Example observed output:
+
+```
+Pacman died! Score: -633
+Average Score: -633.0
+Scores:        -633.0
+Win Rate:      0/1 (0.00)
+Record:        Loss
+```
+
+To play interactively with the keyboard:
+
+```powershell
+python pacman.py -p KeyboardAgent
+```
+
+Use the arrow keys to move. Press `Ctrl + C` in the terminal to quit.
