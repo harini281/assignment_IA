@@ -25,7 +25,7 @@ Record:        Win
 ## 2.Uniform Cost Search (UCS)
 
  SearchAgent -a fn=ucs                                                                        
-[SearchAgent] using function ucs    
+   
 [SearchAgent] using problem type PositionSearchProblem
 Path found with total cost of 68 in 0.0 seconds
 Search nodes expanded: 269
