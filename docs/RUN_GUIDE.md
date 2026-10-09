@@ -132,3 +132,14 @@ All questions were executed and produced the following results:
 - **`SyntaxWarning: invalid escape sequence '\ '` at `grading.py:111`** → harmless warning from a course-provided file under Python 3.12. Does not affect results; ignore.
 - **Default `python pacman.py` shows a loss** → expected; default agent plays randomly. Use `-p KeyboardAgent` for interactive play.
 - **`.venv` getting committed** → ensure `.venv/` is in `.gitignore` before staging.
+
+
+---
+
+## 8. Common Pitfalls (observed while verifying)
+
+- **Forgetting to activate the venv** before running `pip install` → packages install globally. Always run `.\.venv\Scripts\Activate.ps1` first.
+- **Running `python pacman.py` outside the project folder** → `ModuleNotFoundError` for local modules like `game` or `util`. Always run commands from `assignment_IA/`.
+- **Committing `.venv/` to Git** → produces 2600+ noise files. Ensure `.venv/` is in `.gitignore` before `git add`.
+- **Renaming functions/classes in `search.py` or `searchAgents.py`** → autograder imports them by name; any rename = 0 marks for that question.
+- **Using Python built-ins instead of `util.Stack/Queue/PriorityQueue`** → the autograder may reject the implementation.
