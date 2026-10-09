@@ -121,3 +121,14 @@ All questions were executed and produced the following results:
 | `pacman.py` | Game engine / runner (reference) |
 | `autograder.py` | Automated grading script |
 | `grading.py` | Autograder helper (harmless SyntaxWarning on Python 3.12) |
+
+
+---
+
+## 7. Troubleshooting
+
+- **`conda: not recognized`** → conda not installed. Used Python's built-in `venv` module; all steps work.
+- **`.\.venv\Scripts\Activate.ps1` blocked** → run `Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned` once, then retry.
+- **`SyntaxWarning: invalid escape sequence '\ '` at `grading.py:111`** → harmless warning from a course-provided file under Python 3.12. Does not affect results; ignore.
+- **Default `python pacman.py` shows a loss** → expected; default agent plays randomly. Use `-p KeyboardAgent` for interactive play.
+- **`.venv` getting committed** → ensure `.venv/` is in `.gitignore` before staging.
