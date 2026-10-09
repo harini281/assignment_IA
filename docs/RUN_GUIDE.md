@@ -108,3 +108,16 @@ All questions were executed and produced the following results:
 | Q7 | Food heuristic | 5/4 PASS | trickySearch: 4137 nodes (top band ≤9000 → 8/8) |
 
 > Q7 reports 5/4 due to bonus credit in the autograder; the node count of 4137 is comfortably within the highest scoring band.
+
+---
+
+## 6. Project File Roles
+
+| File | Role |
+|------|------|
+| `search.py` | DFS, BFS, UCS, A* implementations (Q1–Q4) |
+| `searchAgents.py` | CornersProblem and heuristics (Q5–Q7) |
+| `util.py` | Stack, Queue, PriorityQueue (read-only) |
+| `pacman.py` | Game engine / runner (reference) |
+| `autograder.py` | Automated grading script |
+| `grading.py` | Autograder helper (harmless SyntaxWarning on Python 3.12) |
