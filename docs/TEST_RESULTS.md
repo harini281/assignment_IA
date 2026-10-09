@@ -21,3 +21,16 @@ Average Score: 442.0
 Scores:        442.0
 Win Rate:      1/1 (1.00)
 Record:        Win
+
+## 2.Uniform Cost Search (UCS)
+
+ SearchAgent -a fn=ucs                                                                        
+[SearchAgent] using function ucs    
+[SearchAgent] using problem type PositionSearchProblem
+Path found with total cost of 68 in 0.0 seconds
+Search nodes expanded: 269
+Pacman emerges victorious! Score: 442
+Average Score: 442.0
+Scores:        442.0
+Win Rate:      1/1 (1.00)
+Record:        Win
