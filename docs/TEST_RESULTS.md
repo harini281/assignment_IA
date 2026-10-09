@@ -45,3 +45,5 @@ Average Score: 300.0
 Scores:        300.0
 Win Rate:      1/1 (1.00)
 Record:        Win
+
+## 5. Greedy Best-First Search
