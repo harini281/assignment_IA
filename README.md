@@ -21,10 +21,10 @@ The objective is to implement uninformed and informed search algorithms and appl
 - [x] Q1 – Depth First Search (DFS)
 - [x] Q2 – Breadth First Search (BFS)
 - [x] Q3 – Uniform Cost Search (UCS)
-- [ ] Q4 – A* Search
-- [ ] Q5 – Corners Problem
-- [ ] Q6 – Corners Heuristic
-- [ ] Q7 – Food Search Heuristic
+- [X] Q4 – A* Search
+- [X] Q5 – Corners Problem
+- [X] Q6 – Corners Heuristic
+- [X] Q7 – Food Search Heuristic
 
 ## Running the Project
 
