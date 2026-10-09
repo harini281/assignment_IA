@@ -5,6 +5,16 @@
 **Platform:** Windows 11, PowerShell
 **Python:** 3.12.13 (conda not available → used Python `venv`)
 
+## Quick Start (TL;DR)
+
+```powershell
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+pip install numpy matplotlib
+python pacman.py                          # verify the game opens
+python autograder.py -q q1                # run one question
+```
+
 ---
 
 ## 1. Prerequisites
