@@ -48,3 +48,5 @@ Record:        Win
 
 ## 5. Greedy Best-First Search
 * **Command Executed:**
+```bash
+  python pacman.py -l openMaze -p SearchAgent -a fn=greedy,heuristic=manhattanHeuristic
