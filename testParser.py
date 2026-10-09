@@ -83,3 +83,5 @@ def emitTestDict(testDict, handle):
             handle.write('%s: """\n%s\n"""\n' % (data, testDict[data]))
         else:
             raise Exception("Bad __emit__")
+
+# Module overview: Parses test specifications and serializes structured test data.

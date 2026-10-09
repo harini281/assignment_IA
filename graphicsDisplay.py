@@ -677,3 +677,5 @@ def saveFrame():
     name = os.path.join(POSTSCRIPT_OUTPUT_DIR, 'frame_%08d.ps' % FRAME_NUMBER)
     FRAME_NUMBER += 1
     writePostscript(name) # writes the current canvas
+
+# Module overview: Renders the Pac-Man board and actors through the graphical display backend.
