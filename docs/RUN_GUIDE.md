@@ -60,3 +60,32 @@ python pacman.py -p KeyboardAgent
 ```
 
 Use the arrow keys to move. Press `Ctrl + C` in the terminal to quit.
+
+
+---
+
+## 4. Running the Autograder
+
+Single question:
+
+```powershell
+python autograder.py -q q1
+```
+
+All questions:
+
+```powershell
+python autograder.py
+```
+
+Per-question commands:
+
+| Question | Topic | Command |
+|----------|-------|---------|
+| Q1 | DFS | `python autograder.py -q q1` |
+| Q2 | BFS | `python autograder.py -q q2` |
+| Q3 | UCS | `python autograder.py -q q3` |
+| Q4 | A*  | `python autograder.py -q q4` |
+| Q5 | Corners problem | `python autograder.py -q q5` |
+| Q6 | Corners heuristic | `python autograder.py -q q6` |
+| Q7 | Food heuristic | `python autograder.py -q q7` |
