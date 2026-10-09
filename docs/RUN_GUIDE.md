@@ -143,3 +143,12 @@ All questions were executed and produced the following results:
 - **Committing `.venv/` to Git** → produces 2600+ noise files. Ensure `.venv/` is in `.gitignore` before `git add`.
 - **Renaming functions/classes in `search.py` or `searchAgents.py`** → autograder imports them by name; any rename = 0 marks for that question.
 - **Using Python built-ins instead of `util.Stack/Queue/PriorityQueue`** → the autograder may reject the implementation.
+
+
+---
+
+## 9. Verification Statement
+
+All commands above were executed on 2026-10-09 on Windows 11 with Python 3.12.13 in a `venv` environment. The autograder results in Section 5 are the actual observed outputs.
+
+— IT24103546 (Member 3)
