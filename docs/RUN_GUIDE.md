@@ -152,3 +152,12 @@ All questions were executed and produced the following results:
 All commands above were executed on 2026-10-09 on Windows 11 with Python 3.12.13 in a `venv` environment. The autograder results in Section 5 are the actual observed outputs.
 
 — IT24103546 (Member 3)
+
+
+---
+
+## 10. Notes & Observations
+
+- All Q1–Q7 autograder runs completed without errors on Python 3.12.13 despite the assignment's recommended range of 3.9–3.11.
+- A harmless `SyntaxWarning` is emitted from `grading.py:111` on Python 3.12; it does not affect test results.
+- The `.venv` folder was excluded from version control to keep the repository clean.
