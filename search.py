@@ -218,10 +218,66 @@ def nullHeuristic(state, problem=None):
     """
     return 0
 
+
 def aStarSearch(problem: SearchProblem, heuristic=nullHeuristic):
-    """Search the node that has the lowest combined cost and heuristic first."""
-    "*** YOUR CODE HERE ***"
-    util.raiseNotDefined()
+    """
+    A* Search uses:
+    f(n) = g(n) + h(n)
+
+    g(n) = actual cost from START
+    h(n) = estimated remaining cost to GOAL
+    """
+
+    # Step 1: Create a Priority Queue.
+    priorityQueue = util.PriorityQueue()
+
+    # Step 2: Get Pac-Man's starting state.
+    start = problem.getStartState()
+
+    # Step 3: Add START with an empty path and cost 0.
+    # Its priority is g(start) + h(start) = 0 + heuristic.
+    priorityQueue.push((start, [], 0), heuristic(start, problem))
+
+    # Step 4: Track explored states.
+    visited = set()
+
+    # Step 5: Continue while nodes are waiting.
+    while not priorityQueue.isEmpty():
+
+        # Take the node with the lowest f(n).
+        state, path, cost = priorityQueue.pop()
+
+        # If the goal is reached, return the path.
+        if problem.isGoalState(state):
+            return path
+
+        # Only expand states not explored before.
+        if state not in visited:
+
+            # Mark this state as explored.
+            visited.add(state)
+
+            # Step 6: Get all possible next states.
+            for successor, action, stepCost in problem.getSuccessors(state):
+
+                # Add the new action to the existing path.
+                newPath = path + [action]
+
+                # Calculate actual total cost: g(n).
+                newCost = cost + stepCost
+
+                # Calculate A* priority: f(n) = g(n) + h(n).
+                priority = newCost + heuristic(successor, problem)
+
+                # Store the successor using f(n) as priority.
+                priorityQueue.push(
+                    (successor, newPath, newCost),
+                    priority
+                )
+
+    # Return an empty path if no solution exists.
+    return []
+
 
 
 # Abbreviations
